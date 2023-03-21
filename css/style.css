@@ -1,0 +1,10 @@
+nav.navbar {
+    background-color: rgb(245, 231, 242);
+    position: sticky;
+    top: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
