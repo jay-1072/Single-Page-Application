@@ -1,5 +1,5 @@
 function callHome() {
-    location.href = "#home";
+    location.href = "#";
 }
 
 function callAboutUs() {
