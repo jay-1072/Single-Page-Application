@@ -20,7 +20,11 @@
     <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
             <!-- navbar brand -->
-            <span class="navbar-brand mb-0 h1">Developer</span>
+            <a class="navbar-brand" href="#">
+              <div style="height: 60px;">
+              <img src="images/nav_logo.jfif" style="max-height: 100%;">
+            </div>
+            </a>
 
             <!-- collapse button on small screen -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navitems"
@@ -30,7 +34,7 @@
 
             <!-- nav links -->
             <div class="collapse navbar-collapse" id="navitems">
-                <div class="navbar-nav">
+                <div class="navbar-nav ms-auto">
                     <button type="button" class="btn nav-link" onclick="callHome()">Home</button>
                     <button type="button" class="btn nav-link" onclick="callAboutUs()">About Us</button>
                     <button type="button" class="btn nav-link" onclick="callImageSlider()">Images</button>

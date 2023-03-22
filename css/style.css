@@ -3,17 +3,12 @@ nav.navbar {
 }
 
 button[type='button'] {
-    font-size:x-large;
+    font-size: x-large;
 }
 
-/* .home-img {
-    width: 100%;
-    height: auto;
+button.nav-link:hover {
+    border: 2px solid gray;
 }
-
-.about-img {
-    width: 100%;
-} */
 
 img {
     width: 100%;
