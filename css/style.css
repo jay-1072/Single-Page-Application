@@ -6,13 +6,18 @@ button[type='button'] {
     font-size:x-large;
 }
 
-.home-img {
+/* .home-img {
     width: 100%;
     height: auto;
 }
 
 .about-img {
     width: 100%;
+} */
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 a {
@@ -81,6 +86,29 @@ div.about-p-txt p {
     font-size: 1.5vw;
     margin-top: 5%;
 }
+
+/* style for image slider */
+.slideshow-container {
+    position: relative;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 1%;
+    color: white;
+    font-size: 2em;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
 
 footer {
     background-color: rgb(245, 231, 242);
