@@ -1,5 +1,6 @@
 location.href = "#";
 
+// redirecting to specific section
 function callHome() {
     location.href = "#";
 }
@@ -15,7 +16,6 @@ function callImageSlider() {
 function callServices() {
     location.href = "#service";
 }
-
 
 // Image Slider using javascript
 let slideIndex = 1;
@@ -44,3 +44,28 @@ function showSlides(n) {
 
     slides[slideIndex-1].style.display = "block";
 }
+
+
+// lazy loading service images
+
+document.addEventListener("DOMContentLoaded", function() {
+    let lazyloadImages;
+   
+      lazyloadImages = document.querySelectorAll(".lazy-load");
+
+      let imageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if(entry.isIntersecting) {
+            let image = entry.target;
+            image.src = image.dataset.src;
+            image.classList.remove("lazy-load");
+            imageObserver.unobserve(image);
+          }
+        });
+      });
+
+      lazyloadImages.forEach(function(image) {
+        imageObserver.observe(image);
+      });
+
+  })
