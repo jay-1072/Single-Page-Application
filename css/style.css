@@ -109,6 +109,16 @@ div.about-p-txt p {
     background-color: rgba(0,0,0,0.8);
 }
 
+/* style for sevices */
+
+div.services {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
 
 footer {
     background-color: rgb(245, 231, 242);
