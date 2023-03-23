@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
     <title>single page application</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jfif" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,11 +23,11 @@
     <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
             <!-- navbar brand -->
-            <a class="navbar-brand" href="#">
-              <div style="height: 60px;">
-              <img src="images/nav_logo.jfif" style="max-height: 100%;">
+            <div class="mt-1 ms-1" style="width: 34px; height: 34px;">
+                <a class="navbar-brand" href="#">                                
+                    <img src="images/logo.jfif" style="max-width: 100%; max-height: 100%;">                               
+                </a>
             </div>
-            </a>
 
             <!-- collapse button on small screen -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navitems"
@@ -73,7 +74,7 @@
                     <h1>About Us</h1>
                 </div>
 
-                <div class="about-p-txt"> 
+                <div class="about-p-txt" style="z-index: 100;"> 
                     <p>Nearly every organization will need to become a tech company in order to compete tomorrow. Yes, even yours. we are on a mission to help companies develop competitiveness and agility using the software. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
                 </div>
@@ -86,7 +87,7 @@
             <div id="image" class="img-slider">
                 <!-- slider container -->
                 <div class="slideshow-container">
-                    <div class="mySlides">
+                    <div class="mySlides" style="width: 100%;">
                         <img src="images/image_0.jpg" alt="image 1 of image slider">
                     </div>
                     <div class="mySlides">
@@ -106,11 +107,11 @@
 
         <!-- Contact us started -->
 
-        <div id="contactUs" class="contact-form bg-secondary py-3">
+        <div id="contactUs" class="contact-form bg-secondary pb-5">
             <div class="container">
                 <form id="myForm">
 
-                    <h1 class="text-center my-3" style="color: white;">Get in touch</h1>
+                    <h1 class="text-center py-5" style="color: white;">Get in touch</h1>
 
                     <div class="mb-3 w-50">
                         <label for="nameIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Full Name</label>
@@ -141,7 +142,7 @@
 
                     <!-- <div> -->
                         
-                        <button id="liveToastBtn" class="btn btn-light" type="submit">Submit</button>
+                        <button id="liveToastBtn" class="btn btn-primary" type="submit">Submit</button>
                     <!-- </div> -->
                 </form>
             </div>
@@ -167,15 +168,15 @@
     <!-- Contact us ended -->
 
         <!-- service div started  -->
-        <div id="service" class="services" style="align-items: center;" >
+        <div id="service" class="services" style="align-items: center; margin-top: 100px; margin-bottom: 100px;" >
 
             <div class="row">
 
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto">
                     <!-- card 1 -->
-                    <div class="card">
+                    <div class="card" style="width: 15em;">
                         <div class="text-center">
-                            <img src="" data-src="images/HTML5.jfif" class="card-img-top card-img mt-4 lazy-load" alt="image of html">
+                            <img src="" data-src="images/HTML5.png" class="card-img-top card-img mt-4 lazy-load" style="height: 160px; width: 200px;" alt="image of html">
                         </div>
                         <div class="card-body">
                             <div class="text-center card-link">
@@ -187,9 +188,9 @@
 
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto">
                     <!-- card 2 -->
-                    <div class="card">
+                    <div class="card" style="width: 15em;">
                         <div class="text-center">
-                            <img src="" data-src="images/css.jfif" class="card-img-top card-img mt-4 lazy-load" alt="image of html">
+                            <img src="" data-src="images/css.png" class="card-img-top card-img mt-4 lazy-load" style="height: 160px; width: 200px;" alt="image of html">
                         </div>
                         <div class="card-body">
                             <div class="text-center card-link">
@@ -201,9 +202,9 @@
 
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto">
                     <!-- card 3 -->
-                    <div class="card">
+                    <div class="card" style="width: 15em;">
                         <div class="text-center">
-                            <img src="" data-src="images/java.jfif" class="card-img-top card-img mt-4 lazy-load" alt="image of java">
+                            <img src="" data-src="images/java.png" class="card-img-top card-img mt-4 lazy-load" style="height: 160px; width: 200px;" alt="image of java">
                         </div>
                         <div class="card-body">
                             <div class="text-center card-link">
@@ -215,9 +216,9 @@
 
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto">
                     <!-- card 4 -->
-                    <div class="card">
+                    <div class="card" style="width: 15em;">
                         <div class="text-center">
-                            <img src="" data-src="images/cSharp.jfif" class="card-img-top card-img mt-4 lazy-load" alt="image of java">
+                            <img src="" data-src="images/C-Sharp.jpg" class="card-img-top card-img mt-4 lazy-load" style="height: 160px; width: 200px;" alt="image of java">
                         </div>
                         <div class="card-body">
                             <div class="text-center card-link">
@@ -229,9 +230,23 @@
 
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto">
                     <!-- card 5 -->
-                    <div class="card">
+                    <div class="card" style="width: 15em;">
                         <div class="text-center">
-                            <img src="" data-src="images/react.jfif" class="card-img-top card-img mt-4 lazy-load" alt="image of java">
+                            <img src="" data-src="images/react.png" class="card-img-top card-img mt-4 lazy-load" style="height: 160px; width: 200px;" alt="image of java">
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center card-link">
+                                <a href="https://www.w3schools.com/react/" target="_blank" class="btn btn-primary">Learn React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto">
+                    <!-- card 6 -->
+                    <div class="card" style="width: 15em;">
+                        <div class="text-center">
+                            <img src="" data-src="images/python.png" class="card-img-top card-img mt-4 lazy-load" style="height: 160px; width: 200px;" alt="image of java">
                         </div>
                         <div class="card-body">
                             <div class="text-center card-link">

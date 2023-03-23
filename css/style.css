@@ -87,7 +87,8 @@ div.about-p-txt p {
     position: relative;
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -100,8 +101,9 @@ div.about-p-txt p {
     right: 0;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* style for sevices */
@@ -117,7 +119,7 @@ div.card {
 }
 
 img.card-img {
-    height: 28vh; 
+    height: 28vh;
     width: 18vw;
 }
 
@@ -128,7 +130,7 @@ footer {
 
 /* media queries */
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 576px) {
     div.card {
         width: 100%;
     }
