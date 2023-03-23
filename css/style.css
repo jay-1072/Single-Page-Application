@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 nav.navbar {
     background-color: rgb(245, 231, 242);
 }
@@ -72,6 +76,58 @@ div.about-p-txt {
     color: black;
     font-size: 25px;
 }
+
+/* new */
+div.about-heading {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+div.about-txt-1 {
+    /* border: 3px solid red; */
+    float: left;
+    width: 40%;
+    height: 80vh; 
+    font-size: 30px;
+    padding-top: 10%;
+    padding-left: 4%;
+    padding-right: 2%;
+    position: relative;
+    background-color: aqua;
+
+}
+
+div.about-img-1 {
+    /* border: 2px solid red;  */
+    float: right; 
+    width: 60%; 
+    height: 80vh;
+}
+
+div.mission-heading {
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    margin-left: 0; 
+    margin-top: 10%; 
+    /* border: 2px solid red; */
+}
+
+/* div.about-txt-2 {
+    border: 2px solid green; 
+    float: right; 
+    width: 40%; 
+    height: 80vh;  
+    font-size: large;
+}
+
+div.about-img-2 {
+    border: 2px solid green; 
+    float: left; 
+    width: 60%; 
+    height: 80vh;
+} */
 
 /* style for image slider */
 .slideshow-container {
