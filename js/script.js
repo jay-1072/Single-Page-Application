@@ -1,4 +1,4 @@
-// location.href = "#";
+location.href = "#";
 
 // redirecting to specific section
 
@@ -100,7 +100,7 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
     sendMsg();
 });
 
-const nameRegex = /^[A-Za-z]+$/;
+const nameRegex = /^[A-Za-z]{1,}$/;
 const emailRegex = /^[a-z_]{3,}@[a-z]{3,}[.]{1}[a-z.]{2,6}$/;
 const contactRegex = /^[0-9]{10}$/;
 
@@ -112,7 +112,7 @@ function sendMsg() {
 
     let flag = true;
 
-    const name = document.getElementById("nameIp").value;
+    const name = document.getElementById("nameIp").value.replace(/\s+/g, '').trim();;
     const email = document.getElementById("emailIp").value;
     const contact = document.getElementById("contactIp").value;
 
