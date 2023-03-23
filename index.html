@@ -37,10 +37,10 @@
             <!-- nav links -->
             <div class="collapse navbar-collapse" id="navitems">
                 <div class="navbar-nav ms-auto">
-                    <button type="button" class="btn nav-link" onclick="callHome()">Home</button>
-                    <button type="button" class="btn nav-link" onclick="callAboutUs()">About Us</button>
-                    <button type="button" class="btn nav-link" onclick="callImageSlider()">Images</button>
-                    <button type="button" class="btn nav-link" onclick="callServices()">Services</button>
+                    <button id="nav-home" type="button" class="btn nav-link" onclick="callHome()">Home</button>
+                    <button id="nav-about" type="button" class="btn nav-link" onclick="callAboutUs()">About Us</button>
+                    <button id="nav-image" type="button" class="btn nav-link" onclick="callImageSlider()">Images</button>
+                    <button id="nav-service" type="button" class="btn nav-link" onclick="callServices()">Services</button>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
                     <h1>HALIFAX WORDPRESS & WEB APP DEVELOPMENT</h1>
                 </div>
                 <div class="home-p-txt"> 
-                    <p>Specializing in custom theme development. If you're a business seeking a web presence or are looking to hire, contact me <a href="#">here</a>.</p>
+                    <p>Specializing in custom theme development. If you're a business seeking a web presence or are looking to hire <input type="button" class="btn btn-light" value="Contact me" onclick="callContactUs()"></p>
                 </div>
             </div>
         <!-- home ended -->
@@ -67,7 +67,7 @@
         <!-- about us started -->
 
             <div id="about" class="about-us">
-                <img class="about-img" src="images/about.png" alt="about page image">
+                <img class="about-img" src="images/about.jpg" alt="about page image">
                 
                 <div class="about-h-txt">
                     <h1>About Us</h1>
@@ -103,6 +103,68 @@
             </div>
 
         <!-- image slider ended -->
+
+        <!-- Contact us started -->
+
+        <div id="contactUs" class="contact-form bg-secondary py-3">
+            <div class="container">
+                <form id="myForm">
+
+                    <h1 class="text-center my-3" style="color: white;">Get in touch</h1>
+
+                    <div class="mb-3 w-50">
+                        <label for="nameIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Full Name</label>
+                        <input type="text" class="form-control shadow-none" id="nameIp" name="nameIp"
+                            required>
+                        <strong id="nameError" class="text-danger font-wight-bold"></strong>
+                    </div>
+
+                    <div class="mb-3 w-50">
+                        <label for="emailIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Email</label>
+                        <input type="email" class="form-control shadow-none" id="emailIp" name="emailIp"
+                            required>
+                        <strong id="emailError" class="text-danger font-wight-bold"></strong>
+                    </div>
+
+                    <div class="mb-3 w-50">
+                        <label for="contactIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Contact Number</label>
+                        <input type="number" class="form-control shadow-none" id="contactIp" name="contactIp"
+                            required>
+                        <strong id="contactError" class="text-danger font-wight-bold"></strong>
+                        
+                    </div>
+
+                    <div class="mb-4 w-50">
+                        <label for="msgIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Message</label>
+                        <textarea class="form-control" rows="4" cols="1" placeholder="Leave a message here" id="msgIp" required></textarea>
+                    </div>
+
+                    <!-- <div> -->
+                        
+                        <button id="liveToastBtn" class="btn btn-light" type="submit">Submit</button>
+                    <!-- </div> -->
+                </form>
+            </div>
+        </div>
+
+
+        <!-- Toast message -->
+        <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <h6>Toast Message</h6>
+                <button type="button" class="btn btn-close" data-bs-dismiss="toast" aria-label="Close" style="margin-left: 170px;"></button>
+            </div>
+            <div class="toast-body">
+                you will be redirect to <span style="color: blue;">https://www.w3schools.com/</span>
+            </div>
+        </div>
+        </div>
+
+
+
+
+    <!-- Contact us ended -->
 
         <!-- service div started  -->
         <div id="service" class="services" style="align-items: center;" >
