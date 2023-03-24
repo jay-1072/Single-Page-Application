@@ -28,7 +28,6 @@ a {
 div.home-page {
     position: relative;
     width: 100%;
-    
 }
 
 div.home-h-txt {
@@ -49,10 +48,10 @@ div.home-p-txt {
     top: 60%;
     width: 100%;
     color: white;
-    /* font-size: 30px; */
-    /* padding-left: 30%;
-    padding-right: 25%; */
-    border: 5px solid red;
+    font-size: 30px;
+    padding-left: 30%;
+    padding-right: 30%;
+    /* border: 5px solid red; */
 }
 
 div.contact-btn {
@@ -61,7 +60,6 @@ div.contact-btn {
     width: 100%;
     /* border: 5px solid red; */
 }
-
 
 /* about heading and paragraph design */
 
@@ -106,7 +104,6 @@ div.about-txt-1 {
     padding-right: 2%;
     position: relative;
     background-color: aqua;
-
 }
 
 div.about-img-1 {
@@ -249,6 +246,37 @@ footer {
         padding: 2px;
         width: 60%;
         margin: auto;
+    }
+
+    div.about-txt-1 {
+        /* border: 3px solid red; */
+        float: left;
+        width: 50%;
+        height: 20vh; 
+        font-size: 9px;
+        padding-top: 7%;
+        padding-left: 3%;
+        padding-right: 1%;
+        position: relative;
+        background-color: aqua;
+    }
+
+    div.about-img-1 {
+        /* border: 2px solid red;  */
+        float: right; 
+        width: 50%; 
+        height: 20vh;
+    }
+
+    div.mission-heading {
+        position: absolute; 
+        left: 0; 
+        top: 0; 
+        width: 100%; 
+        margin-left: 0; 
+        margin-top: 0; 
+        font-size: 15px;
+        /* border: 2px solid red; */
     }
 }
 
