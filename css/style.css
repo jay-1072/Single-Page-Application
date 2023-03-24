@@ -65,6 +65,7 @@ div.contact-btn {
 
 div.about-us {
     position: relative;
+    height: 662px;
 }
 
 div.about-h-txt {
@@ -144,7 +145,7 @@ div.about-img-2 {
 } */
 
 /* style for image slider */
-.slideshow-container {
+div.slideshow-container {
     position: relative;
 }
 
@@ -163,6 +164,12 @@ div.about-img-2 {
 
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+}
+
+div.mySlides img {
+    max-width: 100%; 
+    height: 350px;
+    width: 500px;
 }
 
 /* style for sevices */
@@ -188,7 +195,7 @@ footer {
 
 /* media queries */
 
-@media screen and (min-width: 576px){
+/* @media screen and (min-width: 576px){
     div.card {
         width: 100%;
     }
@@ -196,9 +203,9 @@ footer {
     img.card-img {
         width: 100%;
     }
-}
+} */
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
 
     div.services {
         width: 100%;
@@ -223,151 +230,480 @@ footer {
         display: block;
         text-align: center;
     }
-}
+} */
 
 
 @media screen and (min-width:320px) and (max-width:425px) {
 
+    div.home-h-txt {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        padding-left: 23%;
+        padding-right: 23%;
+    }
+
     div.home-p-txt {
         position: absolute;
         width: 100%;
-        font-size: 9px;
+        font-size: 10px;
         color: white;
+        top: 45%;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
-    div.about-p-txt {
+    div.contact-btn {
+        top: 62%;
+        
+    }
+
+    div.contact-btn input {
+        padding: 4px;
+        font-size: 11px;
+    }
+
+    /* div.about-p-txt {
         position: absolute;
         color: black;
         font-size: 9px;
-    }
+    } */
 
-    .contact-btn {
-        font-size: 9px;
-        padding: 3px;
-    }
-
-    .card-link, .service-link {
+    .card-link, button.service-link {
         font-size: 15px;
-        padding: 2px;
-        width: 60%;
+        padding: 1px;
+        width: 50%;
         margin: auto;
+    }
+
+    div.card {
+        border: none;
+        min-width: 100%;
+    }
+
+    div.about-us {
+        position: relative;
+        height: 450px;
+    }
+
+    div.about-heading {
+        padding: 7px;
     }
 
     div.about-txt-1 {
         /* border: 3px solid red; */
         float: left;
-        width: 50%;
+        width: 45%;
         height: 20vh; 
-        font-size: 9px;
-        padding-top: 7%;
-        padding-left: 3%;
+        font-size: 10px;
+        padding-top: 4%;
+        padding-left: 1%;
         padding-right: 1%;
         position: relative;
-        background-color: aqua;
+        line-height: normal;
     }
 
     div.about-img-1 {
         /* border: 2px solid red;  */
         float: right; 
-        width: 50%; 
+        width: 55%; 
         height: 20vh;
     }
 
     div.mission-heading {
         position: absolute; 
-        left: 0; 
-        top: 0; 
         width: 100%; 
         margin-left: 0; 
         margin-top: 0; 
-        font-size: 15px;
+        font-size: 13px;
         /* border: 2px solid red; */
     }
-}
 
-@media screen and (min-width:425px) and (max-width:550px) {
+    div.mySlides {
+        margin: auto;
+    }
 
-    div.home-p-txt {
+    div.mySlides img {
+        max-width: 100%; 
+        height: 90px;
+        width: 97px;
+    }
+
+    div.slideshow-container {
+        position: relative;
+    }
+
+    .prev, .next {
+        cursor: pointer;
         position: absolute;
-        width: 100%;
-        font-size: 11px;
-        color: white;
-    }
-
-    div.about-p-txt {
-        position: absolute;
-        
-        color: black;
-        font-size: 11px;
-    }
-
-    .contact-btn {
-        font-size: 12px;
-        padding: 3px;
-    }
-
-    .card-link, .service-link {
-        font-size: 15px;
+        top: 45%;
         padding: 4px;
+        color: white;
+        font-size: 1.5em;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    /* div.services {
+        width: 100%;
+        align-items: center;
+    } */
+
+   
+
+    /* img.card-img {
         width: 50%;
-        margin: auto;
-    }
+        height: 50%;
+    } */
+
+    /* div.card-link a {
+        width: 50%;
+        text-align: center;
+    } */
+
+    /* div.nav-bar ul {
+        display: block;
+        text-align: center;
+    } */
 }
 
-@media screen and (min-width:550px) and (max-width:768px) {
+@media screen and (min-width:426px) and (max-width:768px) {
+
+    div.home-h-txt {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        padding-left: 23%;
+        padding-right: 23%;
+    }
 
     div.home-p-txt {
         position: absolute;
         width: 100%;
-        font-size: 14px;
-        color: white;
-    }
-
-    div.about-p-txt {
-        position: absolute;
-        
-        color: black;
-        font-size: 14px;
-    }
-
-    .contact-btn {
-        font-size: 14px;
-        padding: 3px;
-    }
-
-    .card-link, .service-link {
         font-size: 15px;
-        padding: 4px;
-        width: 85%;
+        color: white;
+        top: 45%;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    div.contact-btn {
+        top: 60%;
+        font-size: 15px;
+    }
+
+    div.contact-btn input {
+        padding: 5px;
+    }
+
+    /* div.about-p-txt {
+        position: absolute;
+        color: black;
+        font-size: 9px;
+    } */
+
+    .card-link, button.service-link {
+        font-size: 15px;
+        padding: 2px;
+        width: 70%;
         margin: auto;
     }
+
+    div.card {
+        border: none;
+    }
+
+    div.about-us {
+        position: relative;
+        height: 450px;
+    }
+
+    div.about-heading {
+        padding: 7px;
+    }
+
+    div.about-txt-1 {
+        /* border: 3px solid red; */
+        float: left;
+        width: 45%;
+        height: 20vh; 
+        font-size: 12px;
+        padding-top: 4%;
+        padding-left: 1%;
+        padding-right: 1%;
+        position: relative;
+        line-height: normal;
+    }
+
+    div.about-img-1 {
+        /* border: 2px solid red;  */
+        float: right; 
+        width: 55%; 
+        height: 20vh;
+    }
+
+    div.mission-heading {
+        position: absolute; 
+        width: 100%; 
+        margin-left: 0; 
+        margin-top: 0; 
+        font-size: 18px;
+        /* border: 2px solid red; */
+    }
+
+    div.mySlides {
+        margin: auto;
+    }
+
+    div.mySlides img {
+        max-width: 100%; 
+        height: 150px;
+        width: 200px;
+    }
+
+    div.slideshow-container {
+        position: relative;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        padding: 4px;
+        color: white;
+        font-size: 1.5em;
+    }
+
+    .next {
+        right: 0;
+    }
+
+   
 }
 
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1025px) {
+
+    div.home-h-txt {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        padding-left: 25%;
+        padding-right: 23%;
+    }
 
     div.home-p-txt {
         position: absolute;
         width: 100%;
-        font-size: 18px;
+        font-size: 15px;
         color: white;
+        top: 45%;
+        padding-left: 27%;
+        padding-right: 23%;
     }
 
-    div.about-p-txt {
+    div.contact-btn {
+        top: 60%;
+        font-size: 9px;
+    }
+
+    div.contact-btn input {
+        padding: 7px;
+    }
+
+    /* div.about-p-txt {
         position: absolute;
-        
         color: black;
-        font-size: 18px;
-    }
+        font-size: 9px;
+    } */
 
-    .contact-btn {
+    .card-link, button.service-link {
         font-size: 18px;
         padding: 3px;
-    }
-
-    .card-link, .service-link {
-        font-size: 15px;
-        padding: 4px;
         width: 80%;
         margin: auto;
+    }
+
+    div.card {
+        border: none;
+    }
+
+    div.about-us {
+        position: relative;
+        height: 480px;
+    }
+
+    div.about-heading {
+        padding: 10px;
+    }
+
+    div.about-txt-1 {
+        /* border: 3px solid red; */
+        float: left;
+        width: 60%;
+        height: 20vh; 
+        font-size: 16px;
+        padding-top: 4%;
+        padding-left: 1%;
+        padding-right: 1%;
+        position: relative;
+        line-height: normal;
+    }
+
+    div.about-img-1 {
+        /* border: 2px solid red;  */
+        float: right; 
+        width: 40%; 
+        height: 20vh;
+    }
+
+    div.mission-heading {
+        position: absolute; 
+        width: 100%; 
+        margin-left: 0; 
+        margin-top: 0; 
+        font-size: 25px;
+        /* border: 2px solid red; */
+    }
+
+    div.mySlides {
+        margin: auto;
+    }
+
+    div.mySlides img {
+        max-width: 100%; 
+        height: 220px;
+        width: 280px;
+    }
+
+    div.slideshow-container {
+        position: relative;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        padding: 5px;
+        color: white;
+        font-size: 2em;
+    }
+
+    .next {
+        right: 0;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    div.home-h-txt {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        padding-left: 25%;
+        padding-right: 23%;
+    }
+
+    div.home-p-txt {
+        position: absolute;
+        width: 100%;
+        font-size: 25px;
+        color: white;
+        top: 45%;
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+
+    div.contact-btn {
+        top: 60%;
+        
+    }
+
+    div.contact-btn input {
+        padding: 7px;
+        font-size: 25px;
+    }
+
+    /* div.about-p-txt {
+        position: absolute;
+        color: black;
+        font-size: 9px;
+    } */
+
+    .card-link, button.service-link {
+        font-size: 18px;
+        padding: 3px;
+        width: 80%;
+        margin: auto;
+    }
+
+    div.card {
+        border: none;
+    }
+
+    div.about-us {
+        position: relative;
+        height: 600px;
+    }
+
+    div.about-heading {
+        padding: 10px;
+    }
+
+    div.about-txt-1 {
+        /* border: 3px solid red; */
+        float: left;
+        width: 60%;
+        height: 25vh; 
+        font-size: 20px;
+        padding-top: 4%;
+        padding-left: 1%;
+        padding-right: 1%;
+        position: relative;
+        line-height: normal;
+    }
+
+    div.about-img-1 {
+        /* border: 2px solid red;  */
+        float: right; 
+        width: 40%; 
+        height: 25vh;
+    }
+
+    div.mission-heading {
+        position: absolute; 
+        width: 100%; 
+        margin-left: 0; 
+        margin-top: 0; 
+        font-size: 25px;
+        /* border: 2px solid red; */
+    }
+
+    div.mySlides {
+        margin: auto;
+    }
+
+    div.mySlides img {
+        max-width: 100%; 
+        height: 300px;
+        width: 420px;
+    }
+
+    div.slideshow-container {
+        position: relative;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        padding: 5px;
+        color: white;
+        font-size: 2em;
+    }
+
+    .next {
+        right: 0;
     }
 }
