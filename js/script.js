@@ -39,6 +39,7 @@ function callContactUs() {
 }
 
 // Image Slider using javascript
+
 let slideIndex = 2;
 showSlides(slideIndex);
 
@@ -69,7 +70,7 @@ function showSlides(n) {
 }
 
 
-// lazy loading service images
+// lazy loading service images / course images
 
 document.addEventListener("DOMContentLoaded", function () {
     let lazyloadImages;
@@ -93,14 +94,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })
 
+// Event listener for submit button
 
-
-document.querySelector("#myForm").addEventListener("submit", function (e) {
-    // Prevent the form from submitting
-    e.preventDefault();
-    // sendMsg() will be called when the form is submitted
-    sendMsg();
+document.querySelector("#myForm").addEventListener("submit", function (e) { 
+    // e.preventDefault(); // Prevent the form from submitting
+    sendMsg(e); // sendMsg() will be called when the form is submitted
 });
+
+// Regular expression for validation  
 
 const nameRegex = /^[A-Za-z]{1,}$/;
 const emailRegex = /^[a-z_]{3,}@[a-z]{3,}[.]{1}[a-z.]{2,6}$/;
@@ -110,8 +111,10 @@ const orig_name_ip = document.getElementById("nameIp");
 const orig_email_ip = document.getElementById("emailIp");
 const orig_contact_ip = document.getElementById("contactIp");
 
-function sendMsg() {
 
+// Function for client query
+
+function sendMsg(e) {
     let flag = true;
 
     const name = document.getElementById("nameIp").value.replace(/\s+/g, '').trim();;
@@ -144,65 +147,53 @@ function sendMsg() {
         flag = false;
     }
 
+    // If all inputs are valid then toast message will be displayed
     if (flag) {
-        const toastTrigger = document.getElementById('liveToastBtn')
-        const toastLiveExample = document.getElementById('liveToast')
+        const toastTrigger = document.getElementById('liveToastBtn');
+        const toastLiveExample = document.getElementById('liveToast');
+       
         if (toastTrigger) {
-            toastTrigger.addEventListener('click', () => {
-                const toast = new bootstrap.Toast(toastLiveExample)
-
-                toast.show();
-                // setTimeout(()=>{location.href="https://www.w3schools.com/"},1500);
-            })
+            const toast = new bootstrap.Toast(toastLiveExample);
+            toast.show();
+            document.getElementById("myForm").reset();
         }
     }
 }
 
+// Functions for redirecting to different courses
 
 function toHtml() {
-
     if(confirm("You will be redirect to 'https://www.w3schools.com/html/default.asp'")) {
         window.open('https://www.w3schools.com/html/default.asp');
     }
-    
 }
 
 function toCss() {
-
     if(confirm("You will be redirect to 'https://www.w3schools.com/css/default.asp'")) {
         window.open('https://www.w3schools.com/css/default.asp');
     }
-    
 }
 
 function toJava() {
-
     if(confirm("You will be redirect to 'https://www.w3schools.com/java/default.asp'")) {
         window.open('https://www.w3schools.com/java/default.asp');
     }
-    
 }
 
 function toCsharp() {
-
     if(confirm("You will be redirect to 'https://learn.microsoft.com/en-us/dotnet/csharp/'")) {
         window.open('https://learn.microsoft.com/en-us/dotnet/csharp/');
     }
-    
 }
 
 function toReact() {
-
     if(confirm("You will be redirect to 'https://www.w3schools.com/react/'")) {
         window.open('https://www.w3schools.com/react/');
     }
-    
 }
 
 function toPython() {
-
     if(confirm("You will be redirect to 'https://www.w3schools.com/python/'")) {
         window.open('https://www.w3schools.com/python/');
     }
-    
 }
