@@ -39,7 +39,7 @@ function callContactUs() {
 }
 
 // Image Slider using javascript
-let slideIndex = 1;
+let slideIndex = 2;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -51,7 +51,7 @@ function showSlides(n) {
 
     // if your n (slideIndex) is become grater than Slides array length than set slideIndex to 1.
     if (n > slides.length) {
-        slideIndex = 1;
+        slideIndex = 2;
     }
 
     // if your n (slideIndex) is become negative then set it to slides length
@@ -63,7 +63,9 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
 
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex-2].style.display = "block";
+    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex].style.display = "block";
 }
 
 

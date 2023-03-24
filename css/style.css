@@ -96,21 +96,25 @@ div.about-heading {
 div.about-txt-1 {
     /* border: 3px solid red; */
     float: left;
-    width: 40%;
-    height: 80vh; 
-    font-size: 30px;
-    padding-top: 10%;
-    padding-left: 4%;
+    width: 60%;
+    height: 60%; 
+    font-size: 20px;
+    padding-top: 4%;
+    padding-left: 2%;
     padding-right: 2%;
+    padding-bottom: 3%;
     position: relative;
-    background-color: aqua;
+    background-color: rgb(94, 96, 93);
+    color: white;
 }
 
 div.about-img-1 {
     /* border: 2px solid red;  */
     float: right; 
-    width: 60%; 
-    height: 80vh;
+    /* width: 75%;  */
+    /* height: 70vh; */
+    width: 40%;
+    height: 40%;
 }
 
 div.mission-heading {
@@ -119,7 +123,8 @@ div.mission-heading {
     top: 0; 
     width: 100%; 
     margin-left: 0; 
-    margin-top: 10%; 
+    margin-top: 2%; 
+    font-size: 30px;
     /* border: 2px solid red; */
 }
 
