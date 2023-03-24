@@ -103,31 +103,36 @@
 
         <!-- image slider started -->
 
-            <div id="image" class="img-slider">
+            <div id="image" class="img-slider" style="background-color: rgb(93, 96, 93);">
                 <!-- slider container -->
-                <div class="slideshow-container">
+                <div class="slideshow-container" style="max-height: 100%;">
 
-                    <div class="row"> 
-                        <div class="col-4" style="border: 2px solid red;">
-                        <div class="mySlides">
-                            <img src="images/image_0.jpg" style="width: 100%; height: auto;" alt="image 1 of image slider">
-                        </div>
-                    </div>
-                    <div class="col-4" style="border: 2px solid red;">
-                        <div class="mySlides">
-                            <img src="images/image_1.jpg" alt="image 2 of image slider">
-                        </div>
-                    </div>
-                    <div class="col-4" style="border: 2px solid red;">
-                        <div class="mySlides">
-                            <img src="images/image_2.jpg" alt="image 3 of image slider">
-                        </div>
-                        </div>
-                    </div>
+                    <!-- <div class="row">  -->
+                        <!-- <div class="col-4 py-5 px-5"> -->
+                        <div class="" style="display: flex; flex-flow: row nowrap;">
+                            <div class="mySlides w-30 my-5" style="margin: auto;"> 
+                                <img src="images/image_0.jpg" style="max-width: 100%; height: 350px; width: 500px;" alt="image 1 of image slider">
+                            </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-4 py-5 px-5"> -->
+                            <div class="mySlides w-30 my-5" style="margin: auto;">
+                                <img src="images/image_1.jpg" style="max-width: 100%; height: 350px; width: 500px;" alt="image 2 of image slider">
+                            </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-4 py-5 px-5"> -->
+                            <div class="mySlides w-30 my-5" style="margin: auto;">
+                                <img src="images/image_2.jpg" style="max-width: 100%; height: 350px; width: 500px;" alt="image 3 of image slider">
+                            </div>
+                        <!-- </div> -->
+
+                            <div class="mySlides w-30 my-5" style="margin: auto;">
+                                <img src="images/image_3.jpg" style="max-width: 100%; height: 350px; width: 500px;" alt="image 3 of image slider">
+                            </div>
 
                     <!-- control buttons -->
                     <a class="prev" onclick="plusSlides(-1)">❮</a>
                     <a class="next" onclick="plusSlides(1)">❯</a>
+                    </div>
                 </div>
             </div>
 

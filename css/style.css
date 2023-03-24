@@ -151,8 +151,8 @@ div.about-img-2 {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    padding: 1%;
+    top: 45%;
+    padding: 10px;
     color: white;
     font-size: 2em;
 }

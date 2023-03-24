@@ -50,22 +50,22 @@ function showSlides(n) {
     let slides = document.getElementsByClassName("mySlides");
 
     // if your n (slideIndex) is become grater than Slides array length than set slideIndex to 1.
-    if (n > slides.length) {
+    if (n > 3) {
         slideIndex = 2;
     }
 
     // if your n (slideIndex) is become negative then set it to slides length
-    if (n < 1) {
-        slideIndex = slides.length;
+    if (n < 2) {
+        slideIndex = 3;
     }
 
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
-    slides[slideIndex-2].style.display = "block";
-    slides[slideIndex-1].style.display = "block";
-    slides[slideIndex].style.display = "block";
+    slides[slideIndex-2].style.display = "block";    
+    slides[slideIndex-1].style.display = "block";    
+    slides[slideIndex].style.display = "block";      
 }
 
 
