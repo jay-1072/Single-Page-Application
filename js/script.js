@@ -1,3 +1,5 @@
+location.href = '#';
+
 function callContactUs() {
     location.href = "#contactUs";
 }
@@ -61,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Event listener for submit button
 
 document.querySelector("#myForm").addEventListener("submit", function (e) { 
-    // e.preventDefault(); // Prevent the form from submitting
+    e.preventDefault(); // Prevent the form from submitting
     sendMsg(e); // sendMsg() will be called when the form is submitted
 });
 
