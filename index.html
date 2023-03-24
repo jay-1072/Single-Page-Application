@@ -24,7 +24,7 @@
 
     <!-- navbar started -->
 
-    <nav class="navbar sticky-top navbar-expand-lg">
+    <nav class="navbar sticky-top navbar-expand-lg" id="myNav">
         <div class="container-fluid">
             <!-- navbar brand -->
             <div class="mt-1 ms-1" style="width: 34px; height: 34px;">
@@ -43,10 +43,10 @@
             <!-- nav links -->
             <div class="collapse navbar-collapse" id="navitems">
                 <div class="navbar-nav ms-auto">
-                    <button id="nav-home" type="button" class="btn nav-link" onclick="callHome()">Home</button>
-                    <button id="nav-about" type="button" class="btn nav-link" onclick="callAboutUs()">About Us</button>
-                    <button id="nav-image" type="button" class="btn nav-link" onclick="callImageSlider()">Images</button>
-                    <button id="nav-service" type="button" class="btn nav-link" onclick="callServices()">Services</button>
+                    <a role="button" id="nav-home" type="button" class="btn nav-link" href="#home">Home</a>
+                    <a role="button" id="nav-about" type="button" class="btn nav-link" href="#about">About Us</a>
+                    <a role="button" id="nav-image" type="button" class="btn nav-link" href="#image">Images</a>
+                    <a role="button" id="nav-service" type="button" class="btn nav-link" href="#service">Services</a>
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
 
     <!-- main div started -->
 
-    <div class="main">
+    <div class="main" data-bs-spy="scroll" data-bs-target="#myNav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
 
         <!-- home started -->
             <div id="home" class="home-page">
@@ -305,16 +305,16 @@
             <div id="navbar" class="nav-bar">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                <button type="button" class="btn btn-light border-0 bg-transparent" onclick="callHome()">Home</button>
+                    <a role="button" id="nav-home" type="button" class="btn" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                <button type="button" class="btn btn-light border-0 bg-transparent" onclick="callAboutUs()">About Us</button>
+                    <a role="button" id="nav-about" type="button" class="btn" href="#about">About Us</a>
                 </li>
                 <li class="nav-item">
-                <button type="button" class="btn btn-light border-0 bg-transparent" onclick="callImageSlider()">Images</button>
+                    <a role="button" id="nav-image" type="button" class="btn" href="#image">Images</a>
                 </li>
                 <li class="nav-item">
-                <button type="button" class="btn btn-light border-0 bg-transparent" onclick="callServices()">Services</button>
+                    <a role="button" id="nav-service" type="button" class="btn" href="#service">Services</a>
                 </li>
             </ul>
             </div>

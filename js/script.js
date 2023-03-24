@@ -1,39 +1,3 @@
-location.href = "#";
-
-// redirecting to specific section
-
-function callHome() {
-    location.href = "#";
-    document.getElementById('nav-home').style.border = '1px solid green';
-    document.getElementById('nav-about').style = 'none';
-    document.getElementById('nav-image').style = 'none';
-    document.getElementById('nav-service').style = 'none';
-}
-
-function callAboutUs() {
-    location.href = "#about";
-    document.getElementById('nav-about').style.border = '1px solid green';
-    document.getElementById('nav-home').style = 'none';
-    document.getElementById('nav-image').style = 'none';
-    document.getElementById('nav-service').style = 'none';
-}
-
-function callImageSlider() {
-    location.href = "#image";
-    document.getElementById('nav-image').style.border = '1px solid green';
-    document.getElementById('nav-home').style = 'none';
-    document.getElementById('nav-about').style = 'none';
-    document.getElementById('nav-service').style = 'none';
-}
-
-function callServices() {
-    location.href = "#service";
-    document.getElementById('nav-service').style.border = '1px solid green';
-    document.getElementById('nav-home').style = 'none';
-    document.getElementById('nav-about').style = 'none';
-    document.getElementById('nav-image').style = 'none';
-}
-
 function callContactUs() {
     location.href = "#contactUs";
 }

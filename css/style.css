@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+a, a.btn {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 nav.navbar {
     background-color: rgb(245, 231, 242);
 }
@@ -14,16 +24,7 @@ button.nav-link:hover {
     border: 2px solid gray;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* home heading and paragraph design */
+/* home page style */
 
 div.home-page {
     position: relative;
@@ -51,51 +52,27 @@ div.home-p-txt {
     font-size: 30px;
     padding-left: 30%;
     padding-right: 30%;
-    /* border: 5px solid red; */
 }
 
 div.contact-btn {
     position: absolute;
     top: 72%;
     width: 100%;
-    /* border: 5px solid red; */
 }
 
-/* about heading and paragraph design */
+/* about page style */
 
 div.about-us {
     position: relative;
     height: 662px;
 }
 
-div.about-h-txt {
-    position: absolute;
-    top: 5%;
-    left: 10%;
-}
-
-div.about-h-txt h1 {
-    color: black;
-    font-size: 4vw;
-}
-
-div.about-p-txt {
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    right: 56%;
-    color: black;
-    font-size: 25px;
-}
-
-/* new */
 div.about-heading {
     padding-top: 3vh;
     padding-bottom: 3vh;
 }
 
 div.about-txt-1 {
-    /* border: 3px solid red; */
     float: left;
     width: 60%;
     height: 60%; 
@@ -110,10 +87,7 @@ div.about-txt-1 {
 }
 
 div.about-img-1 {
-    /* border: 2px solid red;  */
     float: right; 
-    /* width: 75%;  */
-    /* height: 70vh; */
     width: 40%;
     height: 40%;
 }
@@ -126,25 +100,9 @@ div.mission-heading {
     margin-left: 0; 
     margin-top: 2%; 
     font-size: 30px;
-    /* border: 2px solid red; */
 }
 
-/* div.about-txt-2 {
-    border: 2px solid green; 
-    float: right; 
-    width: 40%; 
-    height: 80vh;  
-    font-size: large;
-}
-
-div.about-img-2 {
-    border: 2px solid green; 
-    float: left; 
-    width: 60%; 
-    height: 80vh;
-} */
-
-/* style for image slider */
+/* image page style */
 div.slideshow-container {
     position: relative;
 }
@@ -172,7 +130,7 @@ div.mySlides img {
     width: 500px;
 }
 
-/* style for sevices */
+/* sevices page style */
 
 div.services {
     display: flex;
@@ -188,50 +146,10 @@ img.card-img {
     width: 18vw;
 }
 
-/* footer style */
+/* footer page style */
 footer {
     background-color: rgb(245, 231, 242);
 }
-
-/* media queries */
-
-/* @media screen and (min-width: 576px){
-    div.card {
-        width: 100%;
-    }
-
-    img.card-img {
-        width: 100%;
-    }
-} */
-
-/* @media screen and (max-width: 576px) {
-
-    div.services {
-        width: 100%;
-        align-items: center;
-    }
-
-    div.card {
-        min-width: 100%;
-    }
-
-    img.card-img {
-        width: 50%;
-        height: 50%;
-    }
-
-    div.card-link a {
-        width: 50%;
-        text-align: center;
-    }
-
-    div.nav-bar ul {
-        display: block;
-        text-align: center;
-    }
-} */
-
 
 @media screen and (min-width:320px) and (max-width:425px) {
 
@@ -255,19 +173,12 @@ footer {
 
     div.contact-btn {
         top: 62%;
-        
     }
 
     div.contact-btn input {
         padding: 4px;
         font-size: 11px;
     }
-
-    /* div.about-p-txt {
-        position: absolute;
-        color: black;
-        font-size: 9px;
-    } */
 
     .card-link, button.service-link {
         font-size: 15px;
@@ -291,7 +202,6 @@ footer {
     }
 
     div.about-txt-1 {
-        /* border: 3px solid red; */
         float: left;
         width: 45%;
         height: 20vh; 
@@ -304,7 +214,6 @@ footer {
     }
 
     div.about-img-1 {
-        /* border: 2px solid red;  */
         float: right; 
         width: 55%; 
         height: 20vh;
@@ -316,7 +225,6 @@ footer {
         margin-left: 0; 
         margin-top: 0; 
         font-size: 13px;
-        /* border: 2px solid red; */
     }
 
     div.mySlides {
@@ -341,32 +249,6 @@ footer {
         color: white;
         font-size: 1.5em;
     }
-
-    .next {
-        right: 0;
-    }
-
-    /* div.services {
-        width: 100%;
-        align-items: center;
-    } */
-
-   
-
-    /* img.card-img {
-        width: 50%;
-        height: 50%;
-    } */
-
-    /* div.card-link a {
-        width: 50%;
-        text-align: center;
-    } */
-
-    /* div.nav-bar ul {
-        display: block;
-        text-align: center;
-    } */
 }
 
 @media screen and (min-width:426px) and (max-width:768px) {
@@ -398,12 +280,6 @@ footer {
         padding: 5px;
     }
 
-    /* div.about-p-txt {
-        position: absolute;
-        color: black;
-        font-size: 9px;
-    } */
-
     .card-link, button.service-link {
         font-size: 15px;
         padding: 2px;
@@ -425,7 +301,6 @@ footer {
     }
 
     div.about-txt-1 {
-        /* border: 3px solid red; */
         float: left;
         width: 45%;
         height: 20vh; 
@@ -438,7 +313,6 @@ footer {
     }
 
     div.about-img-1 {
-        /* border: 2px solid red;  */
         float: right; 
         width: 55%; 
         height: 20vh;
@@ -450,7 +324,6 @@ footer {
         margin-left: 0; 
         margin-top: 0; 
         font-size: 18px;
-        /* border: 2px solid red; */
     }
 
     div.mySlides {
@@ -479,8 +352,6 @@ footer {
     .next {
         right: 0;
     }
-
-   
 }
 
 @media screen and (min-width:769px) and (max-width:1025px) {
@@ -512,12 +383,6 @@ footer {
         padding: 7px;
     }
 
-    /* div.about-p-txt {
-        position: absolute;
-        color: black;
-        font-size: 9px;
-    } */
-
     .card-link, button.service-link {
         font-size: 18px;
         padding: 3px;
@@ -539,7 +404,6 @@ footer {
     }
 
     div.about-txt-1 {
-        /* border: 3px solid red; */
         float: left;
         width: 60%;
         height: 20vh; 
@@ -552,7 +416,6 @@ footer {
     }
 
     div.about-img-1 {
-        /* border: 2px solid red;  */
         float: right; 
         width: 40%; 
         height: 20vh;
@@ -564,7 +427,6 @@ footer {
         margin-left: 0; 
         margin-top: 0; 
         font-size: 25px;
-        /* border: 2px solid red; */
     }
 
     div.mySlides {
@@ -595,7 +457,7 @@ footer {
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1025px) {
 
     div.home-h-txt {
         position: absolute;
@@ -617,19 +479,12 @@ footer {
 
     div.contact-btn {
         top: 60%;
-        
     }
 
     div.contact-btn input {
         padding: 7px;
         font-size: 25px;
     }
-
-    /* div.about-p-txt {
-        position: absolute;
-        color: black;
-        font-size: 9px;
-    } */
 
     .card-link, button.service-link {
         font-size: 18px;
@@ -652,7 +507,6 @@ footer {
     }
 
     div.about-txt-1 {
-        /* border: 3px solid red; */
         float: left;
         width: 60%;
         height: 25vh; 
@@ -665,7 +519,6 @@ footer {
     }
 
     div.about-img-1 {
-        /* border: 2px solid red;  */
         float: right; 
         width: 40%; 
         height: 25vh;
@@ -678,7 +531,6 @@ footer {
         margin-top: 0; 
         font-size: 25px;
         padding: 10px;
-        /* border: 2px solid red; */
     }
 
     div.mySlides {
