@@ -152,8 +152,57 @@ function sendMsg() {
                 const toast = new bootstrap.Toast(toastLiveExample)
 
                 toast.show();
-                setTimeout(()=>{location.href="https://www.w3schools.com/"},1500);
+                // setTimeout(()=>{location.href="https://www.w3schools.com/"},1500);
             })
         }
     }
+}
+
+
+function toHtml() {
+
+    if(confirm("You will be redirect to 'https://www.w3schools.com/html/default.asp'")) {
+        window.open('https://www.w3schools.com/html/default.asp');
+    }
+    
+}
+
+function toCss() {
+
+    if(confirm("You will be redirect to 'https://www.w3schools.com/css/default.asp'")) {
+        window.open('https://www.w3schools.com/css/default.asp');
+    }
+    
+}
+
+function toJava() {
+
+    if(confirm("You will be redirect to 'https://www.w3schools.com/java/default.asp'")) {
+        window.open('https://www.w3schools.com/java/default.asp');
+    }
+    
+}
+
+function toCsharp() {
+
+    if(confirm("You will be redirect to 'https://learn.microsoft.com/en-us/dotnet/csharp/'")) {
+        window.open('https://learn.microsoft.com/en-us/dotnet/csharp/');
+    }
+    
+}
+
+function toReact() {
+
+    if(confirm("You will be redirect to 'https://www.w3schools.com/react/'")) {
+        window.open('https://www.w3schools.com/react/');
+    }
+    
+}
+
+function toPython() {
+
+    if(confirm("You will be redirect to 'https://www.w3schools.com/python/'")) {
+        window.open('https://www.w3schools.com/python/');
+    }
+    
 }

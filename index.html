@@ -193,7 +193,8 @@
                 
 
                     <div class="text-center">
-                        <button id="liveToastBtn" class="btn btn-light" type="submit">Submit</button>
+                        <button type="button" class="btn btn-primary" id="liveToastBtn" onclick="showToastMsg()">Show live toast</button>
+                        <!-- <button id="liveToastBtn" class="btn btn-light" type="button">Submit</button> -->
                     </div>
                 </form>
             </div>
@@ -201,20 +202,17 @@
 
 
         <!-- Toast message -->
-        <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
-        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <h6>Toast Message</h6>
-                <button type="button" class="btn btn-close" data-bs-dismiss="toast" aria-label="Close" style="margin-left: 170px;"></button>
-            </div>
-            <div class="toast-body">
-                you will be redirect to <span style="color: blue;">https://www.w3schools.com/</span>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <h6>Toast Message</h6>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="toast" aria-label="Close" style="margin-left: 170px;"></button>
+                </div>
+                <div class="toast-body">
+                    Your query submitted successfully.
+                </div>
             </div>
         </div>
-        </div>
-
-
-
 
     <!-- Contact us ended -->
 
@@ -231,7 +229,7 @@
                         </div>
                         <div class="card-body">
                             <div class="text-center card-link">
-                                <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="btn btn-primary service-link">Learn HTML 5</a>
+                                <button class="btn btn-primary service-link" onclick="toHtml()">Learn HTML 5</button>
                             </div>
                         </div>
                     </div>
@@ -245,7 +243,7 @@
                         </div>
                         <div class="card-body">
                             <div class="text-center card-link">
-                                <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="btn btn-primary service-link">Learn CSS 3</a>
+                                <button class="btn btn-primary service-link" onclick="toCss()">Learn CSS 3</button>
                             </div>
                         </div>
                     </div>
@@ -259,7 +257,7 @@
                         </div>
                         <div class="card-body">
                             <div class="text-center card-link">
-                                <a href="https://www.w3schools.com/java/default.asp" target="_blank" class="btn btn-primary service-link">Learn JAVA</a>
+                                <button class="btn btn-primary service-link" onclick="toJava()">Learn JAVA</button>
                             </div>
                         </div>
                     </div>
@@ -273,7 +271,7 @@
                         </div>
                         <div class="card-body">
                             <div class="text-center card-link">
-                                <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="btn btn-primary service-link">Learn C#</a>
+                                <button class="btn btn-primary service-link" onclick="toCsharp()">Learn C#</button>
                             </div>
                         </div>
                     </div>
@@ -287,7 +285,7 @@
                         </div>
                         <div class="card-body">
                             <div class="text-center card-link">
-                                <a href="https://www.w3schools.com/react/" target="_blank" class="btn btn-primary service-link">Learn React</a>
+                                <button class="btn btn-primary service-link" onclick="toReact()">Learn React</button>
                             </div>
                         </div>
                     </div>
@@ -301,7 +299,7 @@
                         </div>
                         <div class="card-body">
                             <div class="text-center card-link">
-                                <a href="https://www.w3schools.com/react/" target="_blank" class="btn btn-primary service-link">Learn React</a>
+                                <button class="btn btn-primary service-link" onclick="toPython()">Learn React</button>
                             </div>
                         </div>
                     </div>
