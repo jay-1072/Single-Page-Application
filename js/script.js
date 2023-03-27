@@ -17,13 +17,13 @@ function showSlides(n) {
     let slides = document.getElementsByClassName("mySlides");
 
     // if your n (slideIndex) is become grater than Slides array length than set slideIndex to 1.
-    if (n > 3) {
+    if (n > 4) {
         slideIndex = 2;
     }
 
     // if your n (slideIndex) is become negative then set it to slides length
     if (n < 2) {
-        slideIndex = 3;
+        slideIndex = 4;
     }
 
     for (let i = 0; i < slides.length; i++) {
