@@ -102,26 +102,26 @@ function sendMsg(e) {
 
     if(flag) {
         if(name=='') {
-            document.getElementById("nameError").innerHTML = "name is required";
+            document.getElementById("nameError").innerHTML = "Please enter name";
             document.getElementById("nameIp").style.border = "1px solid red";
             flag = false;
         }
 
         if(email=='') {
-            document.getElementById("emailError").innerHTML = "email is required";
+            document.getElementById("emailError").innerHTML = "Please enter email";
             document.getElementById("emailIp").style.border = "1px solid red";
             flag = false;
         }
 
         if(contact=='') {
-            document.getElementById('contactError').innerHTML = "contact number is required";
+            document.getElementById('contactError').innerHTML = "Please enter contact number";
             document.getElementById("contactIp").style.border = "1px solid red";
             flag = false;
         }
 
         if(message=='') {
             console.log(message=='');
-            document.getElementById("messageError").innerHTML = "message is required";
+            document.getElementById("messageError").innerHTML = "Please enter message";
             document.getElementById("msgIp").style.border = "1px solid red";
             flag = false;
         }
@@ -133,19 +133,19 @@ function sendMsg(e) {
 
 
     if (!nameRegex.test(name) && name != '') {
-        document.getElementById("nameError").innerHTML = "name is Invalid";
+        document.getElementById("nameError").innerHTML = "Please enter a valid name.";
         document.getElementById("nameIp").style.border = "1px solid red";
         flag = false;
     }
 
     if (!emailRegex.test(email) && email != '') {
-        document.getElementById("emailError").innerHTML = "email is Invalid";
+        document.getElementById("emailError").innerHTML = "Please enter a valid email address.";
         document.getElementById("emailIp").style.border = "1px solid red";
         flag = false;
     }
 
     if (!contactRegex.test(contact) && contact != '') {
-        document.getElementById('contactError').innerHTML = "contact number is Invalid";
+        document.getElementById('contactError').innerHTML = "Please enter a valid contact number.";
         document.getElementById("contactIp").style.border = "1px solid red";
         flag = false;
     }
