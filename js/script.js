@@ -1,5 +1,18 @@
 location.href = '#';
 
+
+// const navLinks = document.getElementById('navlinks');
+
+// function toggleFun() {
+//     document.getElementById('navlinks').classList.toggle('show');
+// }
+
+// window.onclick = function(e) {
+//     if(!e.target.matches('#navlinks')) {
+//         document.getElementById('navlinks').classList.toggle('unshow');
+//     }
+// }
+
 function callContactUs() {
     location.href = "#contactUs";
 }
@@ -70,7 +83,9 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
 // Regular expression for validation  
 
 const nameRegex = /^[A-Za-z]{1,}$/;
-const emailRegex = /^[a-z_]{3,}@[a-z]{3,}[.]{1}[a-z.]{2,6}$/;
+const emailRegex = /^[a-zA-Z0-9]{3,}@[a-z]{3,}[.]{1}[a-z.]{2,6}$/;
+
+// ^+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$
 const contactRegex = /^[0-9]{10}$/;
 
 const orig_name_ip = document.getElementById("nameIp");

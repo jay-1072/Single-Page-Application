@@ -35,14 +35,14 @@
             </div>
 
             <!-- collapse button on small screen -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navitems"
+            <button class="navbar-toggler nav-btn" id="navBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navitems"
                 aria-controls="navitems" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- nav links -->
-            <div class="collapse navbar-collapse" id="navitems">
-                <div class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="navitems"> 
+                <div class="navbar-nav ms-auto" id="navlinks">
                     <a role="button" id="nav-home" type="button" class="btn nav-link" href="#home">Home</a>
                     <a role="button" id="nav-about" type="button" class="btn nav-link" href="#about">About Us</a>
                     <a role="button" id="nav-image" type="button" class="btn nav-link" href="#image">Images</a>
@@ -80,17 +80,22 @@
                     <h1>About Us</h1>
                 </div>
                 <div class="ms-4">
-                    <div class="about-txt-1">
-                        Nearly every organization will need to become a tech company in order to compete tomorrow. Yes, even yours. we are on a mission to help companies develop competitiveness and agility using the software. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        <div class="text-center mission-heading" style="background-color: rgb(36, 36, 34);">Our Mission</div>
-                    </div>
-                    <div class="about-img-1" style="height: fit-content;">
-                        <img style="width: 100%; height: auto;" src="images/about.jpg" alt="about page image 1">
-                    </div>
-                    <div class="about-txt-1 mt-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus integer feugiat scelerisque varius morbi enim nunc. Vestibulum sed arcu non odio euismod lacinia at quis risus. Vel risus commodo viverra maecenas accumsan lacus. Ac odio tempor orci dapibus. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. In nisl nisi scelerisque eu ultrices vitae auctor.
-                        <div class="text-center mission-heading" style="background-color: rgb(36, 36, 34);">Our Vision</div>
-                    </div>
+
+                    
+                        <div class="card about-txt-1" style="width: auto;">
+                            <div class="card-body">
+                                <div class="text-center mission-heading card-title" style="background-color: rgb(36, 36, 34);">Our Mission</div>
+                                <p class="card-text">Nearly every organization will need to become a tech company in order to compete tomorrow. Yes, even yours. we are on a mission to help companies develop competitiveness and agility using the software. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+
+                        <div class="card about-txt-1 mt-3" style="width: auto;">
+                            <div class="card-body">
+                                <div class="text-center mission-heading card-title" style="background-color: rgb(36, 36, 34);">Our Vision</div>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus integer feugiat scelerisque varius morbi enim nunc. Vestibulum sed arcu non odio euismod lacinia at quis risus. Vel risus commodo viverra maecenas accumsan lacus. Ac odio tempor orci dapibus. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. In nisl nisi scelerisque eu ultrices vitae auctor.
+                                </p>
+                            </div>
+                        </div>
                 </div>
             </div>
 
@@ -134,7 +139,7 @@
 
         <!-- Contact us started -->
 
-        <div id="contactUs" class="contact-form bg-secondary pb-5">
+        <div id="contactUs" class="contact-form pb-5 mt-3" style="background-color:  rgb(93, 96, 93);">
             <div class="container">
                 <!-- form started -->
                 <form id="myForm">
@@ -164,7 +169,7 @@
                         <div class="col-12 col-md-4">
                             <div class="mb-3">
                                 <label for="contactIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Contact Number</label>
-                                <input type="number" class="form-control shadow-none" id="contactIp" name="contactIp">
+                                <input type="text" class="form-control shadow-none" id="contactIp" name="contactIp">
                                 <span style="font-weight: 600;" id="contactError" class="text-danger"></span>     
                             </div>
                         </div>
@@ -325,22 +330,22 @@
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link" href="#" target="_blank">
-                        <i class="fa-brands fa-github fa-2x clr" style="color: gray;"></i>
+                        <i class="fa-brands fa-github fa-2x clr" style="color: blue;"></i>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" target="_blank">
-                        <i class="fa-brands fa-linkedin fa-2x clr" style="color: gray;"></i>
+                        <i class="fa-brands fa-linkedin fa-2x clr" style="color: blue;"></i>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <i class="fa-brands fa-twitter fa-2x clr" style="color: gray;"></i>
+                        <i class="fa-brands fa-twitter fa-2x clr" style="color: blue;"></i>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <i class="fa-brands fa-youtube fa-2x clr" style="color: gray;"></i>
+                        <i class="fa-brands fa-youtube fa-2x clr" style="color: blue;"></i>
                     </a>
                 </li>
             </ul>

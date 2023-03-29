@@ -1,6 +1,14 @@
 * {
     box-sizing: border-box;
 }
+/* 
+.show {
+    display: block;
+}
+
+.unshow {
+    display: none;
+} */
 
 a, a.btn {
     text-decoration: none;
@@ -13,7 +21,7 @@ img {
 }
 
 nav.navbar {
-    background-color: rgb(245, 231, 242);
+    background-color: gray;
 }
 
 button[type='button'] {
@@ -148,7 +156,7 @@ img.card-img {
 
 /* footer page style */
 footer {
-    background-color: rgb(245, 231, 242);
+    background-color: gray;
 }
 
 @media screen and (min-width:320px) and (max-width:425px) {
@@ -203,7 +211,7 @@ footer {
 
     div.about-txt-1 {
         float: left;
-        width: 45%;
+        /* width: 45%; */
         height: 20vh; 
         font-size: 10px;
         padding-top: 4%;
@@ -302,7 +310,7 @@ footer {
 
     div.about-txt-1 {
         float: left;
-        width: 45%;
+        width: 50%;
         height: 20vh; 
         font-size: 12px;
         padding-top: 4%;
@@ -405,7 +413,7 @@ footer {
 
     div.about-txt-1 {
         float: left;
-        width: 60%;
+        /* width: 100%; */
         height: 20vh; 
         font-size: 16px;
         padding-top: 4%;
@@ -508,7 +516,7 @@ footer {
 
     div.about-txt-1 {
         float: left;
-        width: 60%;
+        /* width: 100%; */
         height: 25vh; 
         font-size: 20px;
         padding-top: 4%;
