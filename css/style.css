@@ -4,11 +4,11 @@
 /* 
 .show {
     display: block;
-}
-
-.unshow {
-    display: none;
 } */
+
+.hidden_menu {
+    display: none;
+}
 
 a, a.btn {
     text-decoration: none;

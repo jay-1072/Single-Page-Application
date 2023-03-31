@@ -215,3 +215,34 @@ function toPython() {
         window.open('https://www.w3schools.com/python/');
     }
 }
+
+// When clicking outside menu button it will close menu
+
+var navitems = document.getElementById('navitems'),
+menuBtn = document.getElementById('manuBtn'),
+navlinks = document.getElementById('navlinks').childNodes;
+
+let menuStatus = false;
+
+function hide_menu(evt) {
+
+    evt = evt || window.event;						  // get window.event if evt is falsy (IE)
+    var targetElement = evt.target || evt.srcElement; // get srcElement if target is falsy (IE)
+
+    if((targetElement === menuBtn || targetElement === menuBtn.parentElement) && (menuStatus === true)) {
+        navitems.style.display = 'none';
+        menuStatus = false;
+        return;
+    }
+    
+    // || targetElement === navlinks[1] || targetElement === navlinks[3] || navlinks[5] || navlinks[7]
+    if(targetElement === menuBtn || targetElement === menuBtn.parentElement) {
+        navitems.style.display = 'block';
+        menuStatus = true
+    } else {
+        navitems.style.display = 'none';
+        menuStatus = false;
+    }
+}
+
+document.addEventListener('click', hide_menu, false);
