@@ -24,7 +24,7 @@
 
     <!-- navbar started -->
 
-    <nav class="navbar sticky-top navbar-expand-lg" id="myNav">
+    <nav class="navbar sticky-top navbar-expand-lg" id="myNav" style="background-color: rgb(150, 150, 150);">
         <div class="container-fluid">
             <!-- navbar brand -->
             <div class="mt-1 ms-1" style="width: 34px; height: 34px;">
@@ -42,11 +42,11 @@
 
             <!-- nav links -->
             <div class="collapse navbar-collapse hidden_menu" id="navitems"> 
-                <div class="navbar-nav ms-auto" id="navlinks">
-                    <a role="button" id="nav-home" type="button" class="btn nav-link" href="#home">Home</a>
-                    <a role="button" id="nav-about" type="button" class="btn nav-link" href="#about">About Us</a>
-                    <a role="button" id="nav-image" type="button" class="btn nav-link" href="#image">Images</a>
-                    <a role="button" id="nav-service" type="button" class="btn nav-link" href="#service">Services</a>
+                <div class="navbar-nav ms-auto my-1" id="navlinks">
+                    <a role="button" id="nav-home" type="button" class="btn nav-link bg-light mx-1 my-1" href="#home">Home</a>
+                    <a role="button" id="nav-about" type="button" class="btn nav-link bg-light mx-1 my-1" href="#about">About Us</a>
+                    <a role="button" id="nav-image" type="button" class="btn nav-link bg-light mx-1 my-1" href="#image">Images</a>
+                    <a role="button" id="nav-service" type="button" class="btn nav-link bg-light mx-1 my-1" href="#service">Services</a>
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
 
     <!-- main div started -->
 
-    <div class="main" data-bs-spy="scroll" data-bs-target="#myNav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <div class="main" data-bs-spy="scroll" data-bs-target="#myNav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example  p-3 rounded-2" tabindex="0">
 
         <!-- home started -->
             <div id="home" class="home-page">
@@ -74,63 +74,65 @@
         <!-- home ended -->
 
         <!-- about us started -->
-
-            <div id="about" class="about-us">
-                <div class="text-center about-heading">
-                    <h1>About Us</h1>
+            <div id="about" class="container-fluid py-3" style="background-color: rgb(220, 220, 220);">
+                <div class="text-center">
+                    <h1 style="font-size: calc(22px + 0.390625vw);">About Us</h1>
                 </div>
-                <div class="ms-4">
 
-                    
-                        <div class="card about-txt-1" style="width: auto;">
-                            <div class="card-body">
-                                <div class="text-center mission-heading card-title" style="background-color: rgb(36, 36, 34);">Our Mission</div>
-                                <p class="card-text">Nearly every organization will need to become a tech company in order to compete tomorrow. Yes, even yours. we are on a mission to help companies develop competitiveness and agility using the software. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="row">
+                    <div class="col-12 my-3">
+                        <div class="card w-50">
+                            <div class="card-body" style="min-width: fit-content;">
+                                <div class="text-center" style="font-size: calc(18px + 0.390625vw); font-weight: bolder;">Our Mission</div>
+                                <p class="card-text" style="font-size: calc(15px + 0.390625vw);">Nearly every organization will need to become a tech company in order to compete tomorrow. Yes, even yours. we are on a mission to help companies develop competitiveness and agility using the software. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="card about-txt-1 mt-3" style="width: auto;">
+                    <div class="col-12 my-3">
+                        <div class="card w-50" style="float: right;">
                             <div class="card-body">
-                                <div class="text-center mission-heading card-title" style="background-color: rgb(36, 36, 34);">Our Vision</div>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus integer feugiat scelerisque varius morbi enim nunc. Vestibulum sed arcu non odio euismod lacinia at quis risus. Vel risus commodo viverra maecenas accumsan lacus. Ac odio tempor orci dapibus. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. In nisl nisi scelerisque eu ultrices vitae auctor.
+                                <div class="text-center" style="font-size: calc(18px + 0.390625vw); font-weight: bolder;">Our Vision</div>
+                                <p class="card-text" style="font-size: calc(15px + 0.390625vw); ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus integer feugiat scelerisque varius morbi enim nunc. Vestibulum sed arcu non odio euismod lacinia at quis risus. Vel risus commodo viverra maecenas accumsan lacus. Ac odio tempor orci dapibus. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. In nisl nisi scelerisque eu ultrices vitae auctor.
                                 </p>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
-
         <!-- about us ended -->
 
         <!-- image slider started -->
 
-            <div id="image" class="img-slider" style="background-color: rgb(93, 96, 93);">
-                <!-- slider container -->
-                <div class="slideshow-container" style="max-height: 100%;">
+            <div id="image" class="container-fluid slideshow-container" style="background-color: rgb(247, 247, 247);">
+                <div class="row">
+                    <div class="col">
+                        <!-- slider container -->
+                        <div style="display: flex; flex-flow: row; justify-content: space-evenly;">
+                            <div class="mySlides my-4 mx-2" style="width: 40%;"> 
+                                <img src="" data-src="images/image_0.jpg" class="lazy-load" alt="image 1 of image slider">
+                            </div>
+                        
+                            <div class="mySlides my-4 mx-2" style="width: 40%;">
+                                <img src="" data-src="images/image_1.jpg" class="lazy-load" alt="image 2 of image slider">
+                            </div>
+                        
+                            <div class="mySlides my-4 mx-2" style="width: 40%;">
+                                <img src="" data-src="images/image_2.jpg" class="lazy-load" alt="image 3 of image slider">
+                            </div>
 
-                    <div class="" style="display: flex; flex-flow: row nowrap;">
-                        <div class="mySlides w-30 my-5"> 
-                            <img src="" data-src="images/image_0.jpg" class="lazy-load" alt="image 1 of image slider">
-                        </div>
-                    
-                        <div class="mySlides w-30 my-5">
-                            <img src="" data-src="images/image_1.jpg" class="lazy-load" alt="image 2 of image slider">
-                        </div>
-                    
-                        <div class="mySlides w-30 my-5">
-                            <img src="" data-src="images/image_2.jpg" class="lazy-load" alt="image 3 of image slider">
-                        </div>
+                            <div class="mySlides my-4 mx-2" style="width: 40%;">
+                                <img src="" data-src="images/image_3.jpg" class="lazy-load" alt="image 3 of image slider">
+                            </div>
 
-                        <div class="mySlides w-30 my-5">
-                            <img src="" data-src="images/image_3.jpg" class="lazy-load" alt="image 3 of image slider">
-                        </div>
+                            <div class="mySlides my-4 mx-2" style="width: 40%;">
+                                <img src="" data-src="images/image_4.jpg" class="lazy-load" alt="image 4 of image slider">
+                            </div>
 
-                        <div class="mySlides w-30 my-5">
-                            <img src="" data-src="images/image_4.jpg" class="lazy-load" alt="image 4 of image slider">
+                            <!-- control links -->
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
                         </div>
-
-                        <!-- control links -->
-                        <a class="prev" onclick="plusSlides(-1)">❮</a>
-                        <a class="next" onclick="plusSlides(1)">❯</a>
                     </div>
                 </div>
             </div>
@@ -139,7 +141,7 @@
 
         <!-- Contact us started -->
 
-        <div id="contactUs" class="contact-form pb-5 mt-3" style="background-color:  rgb(93, 96, 93);">
+        <div id="contactUs" class="contact-form pb-5" style="background-color: rgb(220, 220, 220);">
             <div class="container">
                 <!-- form started -->
                 <form id="myForm">
@@ -209,11 +211,11 @@
     <!-- Contact us ended -->
 
     <!-- service div started  -->
-        <div id="service" class="services" style="align-items: center; margin-top: 100px; margin-bottom: 100px;" >
+        <div id="service" class="services" style="align-items: center; background-color: rgb(247, 247, 247);" >
 
             <div class="row">
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto mb-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto my-5">
                     <!-- card 1 -->
                     <div class="card" style="width: 15em;">
                         <div class="text-center">
@@ -227,7 +229,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto mb-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto my-5">
                     <!-- card 2 -->
                     <div class="card" style="width: 15em;">
                         <div class="text-center">
@@ -241,7 +243,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto mb-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto my-5">
                     <!-- card 3 -->
                     <div class="card" style="width: 15em;">
                         <div class="text-center">
@@ -255,7 +257,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto mb-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto my-5">
                     <!-- card 4 -->
                     <div class="card" style="width: 15em;">
                         <div class="text-center">
@@ -269,7 +271,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto mb-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto my-5">
                     <!-- card 5 -->
                     <div class="card" style="width: 15em;">
                         <div class="text-center">
@@ -283,7 +285,7 @@
                     </div>
                 </div>  
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto mb-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto my-5">
                     <!-- card 6 -->
                     <div class="card" style="width: 15em;">
                         <div class="text-center">
@@ -310,18 +312,18 @@
 
         <footer class="footer">
             <div id="navbar" class="nav-bar">
-            <ul class="nav justify-content-center">
+            <ul class="nav justify-content-center" style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: nowrap;">
                 <li class="nav-item">
-                    <a role="button" id="nav-home" type="button" class="btn" href="#home">Home</a>
+                    <a role="button" id="nav-home" type="button" class="btn" href="#home" style="font-size: calc(15px + 0.390625vw);">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a role="button" id="nav-about" type="button" class="btn" href="#about">About Us</a>
+                    <a role="button" id="nav-about" type="button" class="btn" href="#about" style="font-size: calc(15px + 0.390625vw);">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a role="button" id="nav-image" type="button" class="btn" href="#image">Images</a>
+                    <a role="button" id="nav-image" type="button" class="btn" href="#image" style="font-size: calc(15px + 0.390625vw);">Images</a>
                 </li>
                 <li class="nav-item">
-                    <a role="button" id="nav-service" type="button" class="btn" href="#service">Services</a>
+                    <a role="button" id="nav-service" type="button" class="btn" href="#service" style="font-size: calc(15px + 0.390625vw);">Services</a>
                 </li>
             </ul>
             </div>
