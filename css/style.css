@@ -5,13 +5,12 @@
     font-family: serif;
 }
 
-.hidden_menu {
-    display: none;
+nav.navbar {
+    background-color: rgb(150, 150, 150);
 }
 
-a, a.btn {
+a{
     text-decoration: none;
-    font-size: 20px;
 }
 
 img {
@@ -19,26 +18,14 @@ img {
     height: auto;
 }
 
-nav.navbar {
-    background-color: black;
-}
-
 button[type='button'] {
     font-size: x-large;
 }
-
-button.nav-link:hover {
-    border: 2px solid gray;
-}
-
-/* home page style */
 
 div.home-page {
     position: relative;
     width: 100%;
 }
-
-/* Keep here */
 
 div.home-h-txt {
     position: absolute;
@@ -76,7 +63,6 @@ div.contact-btn input {
     padding: 0.5vw;
     font-size: 1.6vw;
     border-radius: 5px;
-
 }
 
 div.about-h-txt h1 {
@@ -93,50 +79,8 @@ p.card-p-txt {
     font-size: 2vw;
 }
 
-/* to here */
-
-/* about page style */
-
-div.about-us {
-    height: 100% !important;
-}
-
-div.about-heading {
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-}
-
-div.about-txt-1 {
-    float: left;
-    width: 60%;
-    height: 60%; 
-    font-size: 20px;
-    padding-top: 4%;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 3%;
-    background-color: rgb(94, 96, 93);
-    color: white;
-}
-
-div.about-img-1 {
-    float: right; 
-    width: 40%;
-    height: 40%;
-}
-
-div.mission-heading {
-    left: 0; 
-    top: 0; 
-    width: 100%; 
-    margin-left: 0; 
-    margin-top: 2%; 
-    font-size: 30px;
-}
-
-/* image page style */
-div.slideshow-container {
-    position: relative;
+div.mySlides {
+    min-width: 40%;
 }
 
 div.mySlides img {
@@ -147,45 +91,40 @@ div.mySlides img {
 .prev {
     cursor: pointer;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 0;
     color: white;
     font-size: 100%;
-    padding-top: 1.5vw;
-    padding-bottom: 1.5vw;
-    padding-left: 0.6vw;
-    padding-right: 0.6vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
     background-color: black;
 }
 
 .next {
     cursor: pointer;
     position: absolute;
-    top: 45%;
+    top: 40%;
     right: 0;
     color: white;
     font-size: 100%;
-    padding-top: 1.5vw;
-    padding-bottom: 1.5vw;
-    padding-left: 0.6vw;
-    padding-right: 0.6vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
     background-color: black;
 }
 
-/* sevices page style */
+/* image page style */
+div.slideshow-container {
+    position: relative;
+}
 
+/* sevices page style */
 div.services {
     display: flex;
     justify-content: space-evenly;
-}
-
-div.card {
-    width: 19vw;
-}
-
-img.card-img {
-    height: 28vh; 
-    width: 18vw;
 }
 
 /* footer page style */
@@ -194,8 +133,6 @@ footer {
 }
 
 @media screen and (min-width:320px) and (max-width:426px) {
-
-    /* here */
     div.home-h-txt {
         position: absolute;
         top: 25%;
@@ -206,12 +143,10 @@ footer {
 
     div.home-h-txt h1 {
         color: white;
-        /* font-size: 4vw; */
     }
 
     div.home-p-txt {
         position: absolute;
-        /* font-size: 4vw; */
         width: 100%;
         top: 45%;
         padding-left: 6vw;
@@ -249,99 +184,55 @@ footer {
         font-size: 4vw;
     }
 
-     /* to here */
-
-    .card-link, button.service-link {
-        font-size: 15px;
-        padding: 1px;
-        width: 50%;
-        margin: auto;
-    }
-
-    div.card {
-        border: none;
-        min-width: 100%;
-    }
-
-    div.about-us {
-        height: 100% !important;
-    }
-
-    div.about-heading {
-        padding: 7px;
-    }
-
-    /* div.about-txt-1 {
-        float: left;
-        width: 45%;
-        height: 20vh; 
-        font-size: 100%;
-        padding-top: 4%;
-        padding-left: 1%;
-        padding-right: 1%;
-        position: relative;
-        line-height: normal;
-    } */
-
-    div.about-img-1 {
-        float: right; 
-        width: 55%; 
-        height: 20vh;
-    }
-
-    div.mission-heading {
-        width: 100%; 
-        margin-left: 0; 
-        margin-top: 0; 
-        font-size: 13px;
-    }
-
     div.mySlides {
-        /* margin: auto; */
+        min-width: 40%;
     }
 
-    div.mySlides img {
-        height: 100%;
-        max-width: 100%;
-    }
-
-    div.slideshow-container {
-        position: relative;
+    div.about-card {
+        min-width: 100%;
     }
 
     .prev {
         cursor: pointer;
         position: absolute;
-        top: 40%;
+        top: 33%;
         left: 0;
         color: white;
         font-size: 100%;
-        padding-top: 2vw;
-        padding-bottom: 2vw;
-        padding-left: 1.5vw;
-        padding-right: 1.5vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        padding-left: 1.2vw;
+        padding-right: 1.2vw;
         background-color: black;
-        
     }
 
     .next {
         cursor: pointer;
         position: absolute;
-        top: 40%;
+        top: 33%;
         right: 0;
         color: white;
         font-size: 100%;
-        padding-top: 2vw;
-        padding-bottom: 2vw;
-        padding-left: 1.5vw;
-        padding-right: 1.5vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        padding-left: 1.2vw;
+        padding-right: 1.2vw;
         background-color: black;
+    }
+
+    div.card {
+        border: none;
+    }
+
+    .card-link, button.service-link {
+        font-size: 15px;
+        padding: 1px;
+        width: 70%;
+        margin: auto;
     }
 }
 
 @media screen and (min-width:426px) and (max-width:769px) {
-
-    /* here */
 
     div.home-h-txt {
         position: absolute;
@@ -353,14 +244,11 @@ footer {
 
     div.home-h-txt h1 {
         color: white;
-        /* font-size: 4vw; */
     }
 
     div.home-p-txt {
         position: absolute;
         width: 100%;
-        /* font-size: 15px; */
-        /* color: white; */
         top: 45%;
         padding-left: 12vw;
         padding-right: 12vw;
@@ -388,6 +276,10 @@ footer {
         font-weight: bolder;
     }
 
+    div.about-card {
+        min-width: 60%;
+    }
+
     div.mission-h-txt, div.vision-h-txt {
         font-size: 3.2vw;
         font-weight: bolder;
@@ -397,55 +289,8 @@ footer {
         font-size: 3vw;
     }
 
-    /* to here */
-
-    .card-link, button.service-link {
-        font-size: 15px;
-        padding: 2px;
-        width: 70%;
-        margin: auto;
-    }
-
-    div.card {
-        border: none;
-    }
-
-    div.about-us {
-        height: 100% !important;
-    }
-/* 
-    div.about-heading {
-        padding: 7px;
-    } */
-/* 
-    div.about-txt-1 {
-        float: left;
-        width: 50%;
-        height: 20vh; 
-        font-size: 12px;
-        padding-top: 4%;
-        padding-left: 1%;
-        padding-right: 1%;
-        position: relative;
-        line-height: normal;
-    } */
-/* 
-    div.about-img-1 {
-        float: right; 
-        width: 55%; 
-        height: 20vh;
-    } */
-/* 
-    div.mission-heading {
-        position: absolute; 
-        width: 100%; 
-        margin-left: 0; 
-        margin-top: 0; 
-        font-size: 18px;
-    } */
-
     div.mySlides {
-        margin: auto;
+        min-width: 40%;
     }
 
     div.mySlides img {
@@ -453,37 +298,48 @@ footer {
         max-width: 100%;
     }
 
-    div.slideshow-container {
-        position: relative;
-    }
-
     .prev {
-        cursor: pointer;
+        /* cursor: pointer; */
         position: absolute;
         top: 45%;
         left: 0;
         color: white;
         font-size: 100%;
-        padding: 0.9vw;
-        background-color: black;
-        
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        padding-left: 0.7vw;
+        padding-right: 0.7vw;
+        background-color: black;        
     }
 
     .next {
-        cursor: pointer;
+        /* cursor: pointer; */
         position: absolute;
-        top: 45%;
+        top: 40%;
         right: 0;
         color: white;
         font-size: 100%;
-        padding: 0.9vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        padding-left: 0.7vw;
+        padding-right: 0.7vw;
         background-color: black;
+    }
+
+    div.card {
+        border: none;
+    }
+
+    .card-link, button.service-link {
+        font-size: 15px;
+        padding: 2px;
+        width: 70%;
+        margin: auto;
     }
 }
 
 @media screen and (min-width:769px) and (max-width:1025px) {
 
-    /* here */
     div.home-h-txt {
         position: absolute;
         top: 25%;
@@ -494,14 +350,11 @@ footer {
 
     div.home-h-txt h1 {
         color: white;
-        /* font-size: 4vw; */
     }
 
     div.home-p-txt {
         position: absolute;
         width: 100%;
-        /* font-size: 15px; */
-        /* color: white; */
         top: 45%;
         padding-left: 12vw;
         padding-right: 12vw;
@@ -538,55 +391,8 @@ footer {
         font-size: 3vw;
     }
 
-    /* to here */
-
-    .card-link, button.service-link {
-        font-size: 18px;
-        padding: 3px;
-        width: 80%;
-        margin: auto;
-    }
-
-    div.card {
-        border: none;
-    }
-
-    div.about-us {
-        height: 100% !important;
-    }
-
-    div.about-heading {
-        padding: 10px;
-    }
-
-    div.about-txt-1 {
-        float: left;
-        /* width: 100%; */
-        height: 20vh; 
-        font-size: 16px;
-        padding-top: 4%;
-        padding-left: 1%;
-        padding-right: 1%;
-        position: relative;
-        line-height: normal;
-    }
-
-    div.about-img-1 {
-        float: right; 
-        width: 40%; 
-        height: 20vh;
-    }
-
-    div.mission-heading {
-        position: absolute; 
-        width: 100%; 
-        margin-left: 0; 
-        margin-top: 0; 
-        font-size: 25px;
-    }
-
     div.mySlides {
-        margin: auto;
+        min-width: 40%;
     }
 
     div.mySlides img { 
@@ -594,19 +400,15 @@ footer {
         max-width: 100%;
     }
 
-    div.slideshow-container {
-        position: relative;
-    }
-
     .prev {
         cursor: pointer;
         position: absolute;
-        top: 45%;
+        top: 40%;
         left: 0;
         color: white;
         font-size: 90%;
-        padding-top: 2vw;
-        padding-bottom: 2vw;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
         padding-left: 1vw;
         padding-right: 1vw;
         background-color: black;
@@ -616,14 +418,29 @@ footer {
     .next {
         cursor: pointer;
         position: absolute;
-        top: 45%;
+        top: 40%;
         right: 0;
         color: white;
         font-size: 90%;
-        padding-top: 2vw;
-        padding-bottom: 2vw;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
         padding-left: 1vw;
         padding-right: 1vw;
         background-color: black;
     }
+
+    div.card {
+        border: none;
+    }
+    
+    .card-link, button.service-link {
+        font-size: 18px;
+        padding: 3px;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.hidden_menu {
+    display: none;
 }
