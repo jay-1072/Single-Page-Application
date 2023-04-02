@@ -88,6 +88,15 @@ div.mySlides img {
     height: 100%;
 }
 
+div.card {
+    border: none;
+}
+
+/* image page style */
+div.slideshow-container {
+    position: relative;
+}
+
 .prev {
     cursor: pointer;
     position: absolute;
@@ -116,11 +125,6 @@ div.mySlides img {
     background-color: black;
 }
 
-/* image page style */
-div.slideshow-container {
-    position: relative;
-}
-
 /* sevices page style */
 div.services {
     display: flex;
@@ -133,35 +137,18 @@ footer {
 }
 
 @media screen and (min-width:320px) and (max-width:426px) {
-    div.home-h-txt {
-        position: absolute;
-        top: 25%;
-        width: 100%;
-        padding-left: 23%;
-        padding-right: 23%;
-    }
-
-    div.home-h-txt h1 {
-        color: white;
-    }
-
     div.home-p-txt {
-        position: absolute;
-        width: 100%;
-        top: 45%;
         padding-left: 6vw;
         padding-right: 6vw;
     }
 
     div.home-p-txt p {
-        color: white;
         font-size: 4vw;
     }
 
     div.contact-btn {
         position: absolute;
         top: 72%;
-        width: 100%;
     }
 
     div.contact-btn input {
@@ -172,56 +159,26 @@ footer {
 
     div.about-h-txt h1 {
         font-size: 4.7vw;
-        font-weight: bolder;
     }
 
     div.mission-h-txt, div.vision-h-txt {
         font-size: 4.2vw;
-        font-weight: bolder;
     }
 
     p.card-p-txt {
         font-size: 4vw;
     }
 
-    div.mySlides {
-        min-width: 40%;
-    }
-
     div.about-card {
         min-width: 100%;
     }
 
-    .prev {
-        cursor: pointer;
-        position: absolute;
+    .prev, .next {
         top: 33%;
-        left: 0;
-        color: white;
-        font-size: 100%;
         padding-top: 3vh;
         padding-bottom: 3vh;
         padding-left: 1.2vw;
         padding-right: 1.2vw;
-        background-color: black;
-    }
-
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 33%;
-        right: 0;
-        color: white;
-        font-size: 100%;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-        padding-left: 1.2vw;
-        padding-right: 1.2vw;
-        background-color: black;
-    }
-
-    div.card {
-        border: none;
     }
 
     .card-link, button.service-link {
@@ -233,36 +190,18 @@ footer {
 }
 
 @media screen and (min-width:426px) and (max-width:769px) {
-
-    div.home-h-txt {
-        position: absolute;
-        top: 25%;
-        width: 100%;
-        padding-left: 23%;
-        padding-right: 23%;
-    }
-
-    div.home-h-txt h1 {
-        color: white;
-    }
-
     div.home-p-txt {
-        position: absolute;
-        width: 100%;
-        top: 45%;
         padding-left: 12vw;
         padding-right: 12vw;
     }
 
     div.home-p-txt p {
-        color: white;
         font-size: 3vw;
     }
 
     div.contact-btn {
         position: absolute;
-        top: 66%;
-        width: 100%;   
+        top: 66%;   
     }
 
     div.contact-btn input {
@@ -273,7 +212,6 @@ footer {
 
     div.about-h-txt h1 {
         font-size: 3.7vw;
-        font-weight: bolder;
     }
 
     div.about-card {
@@ -282,52 +220,18 @@ footer {
 
     div.mission-h-txt, div.vision-h-txt {
         font-size: 3.2vw;
-        font-weight: bolder;
     }
 
     p.card-p-txt {
         font-size: 3vw;
     }
 
-    div.mySlides {
-        min-width: 40%;
-    }
-
-    div.mySlides img {
-        height: 100%;
-        max-width: 100%;
-    }
-
-    .prev {
-        /* cursor: pointer; */
-        position: absolute;
-        top: 45%;
-        left: 0;
-        color: white;
-        font-size: 100%;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-        padding-left: 0.7vw;
-        padding-right: 0.7vw;
-        background-color: black;        
-    }
-
-    .next {
-        /* cursor: pointer; */
-        position: absolute;
+    .prev, .next {
         top: 40%;
-        right: 0;
-        color: white;
-        font-size: 100%;
         padding-top: 3vh;
         padding-bottom: 3vh;
         padding-left: 0.7vw;
-        padding-right: 0.7vw;
-        background-color: black;
-    }
-
-    div.card {
-        border: none;
+        padding-right: 0.7vw;        
     }
 
     .card-link, button.service-link {
@@ -339,36 +243,18 @@ footer {
 }
 
 @media screen and (min-width:769px) and (max-width:1025px) {
-
-    div.home-h-txt {
-        position: absolute;
-        top: 25%;
-        width: 100%;
-        padding-left: 23%;
-        padding-right: 23%;
-    }
-
-    div.home-h-txt h1 {
-        color: white;
-    }
-
     div.home-p-txt {
-        position: absolute;
-        width: 100%;
-        top: 45%;
         padding-left: 12vw;
         padding-right: 12vw;
     }
 
     div.home-p-txt p {
-        color: white;
         font-size: 3vw;
     }
 
     div.contact-btn {
         position: absolute;
         top: 66%;
-        width: 100%;
     }
 
     div.contact-btn input {
@@ -379,58 +265,22 @@ footer {
 
     div.about-h-txt h1 {
         font-size: 3.7vw;
-        font-weight: bolder;
     }
 
     div.mission-h-txt, div.vision-h-txt {
         font-size: 3.2vw;
-        font-weight: bolder;
     }
 
     p.card-p-txt {
         font-size: 3vw;
     }
 
-    div.mySlides {
-        min-width: 40%;
-    }
-
-    div.mySlides img { 
-        height: 100%;
-        max-width: 100%;
-    }
-
-    .prev {
-        cursor: pointer;
-        position: absolute;
+    .prev, .next {
         top: 40%;
-        left: 0;
-        color: white;
-        font-size: 90%;
         padding-top: 4vh;
         padding-bottom: 4vh;
         padding-left: 1vw;
         padding-right: 1vw;
-        background-color: black;
-        
-    }
-
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 40%;
-        right: 0;
-        color: white;
-        font-size: 90%;
-        padding-top: 4vh;
-        padding-bottom: 4vh;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        background-color: black;
-    }
-
-    div.card {
-        border: none;
     }
     
     .card-link, button.service-link {
