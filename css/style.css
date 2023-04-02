@@ -44,13 +44,13 @@ div.home-p-txt {
     position: absolute;
     top: 45%;
     width: 100%;
-    padding-left: 24vw;
-    padding-right: 24vw;
+    padding-left: 29vw;
+    padding-right: 29vw;
 }
 
 div.home-p-txt p {
     color: white;
-    font-size: 2vw;
+    font-size: 1.65vw;
 }
 
 div.contact-btn {
@@ -66,17 +66,17 @@ div.contact-btn input {
 }
 
 div.about-h-txt h1 {
-    font-size: 2.7vw;
-    font-weight: bolder;
-}
-
-div.mission-h-txt, div.vision-h-txt {
     font-size: 2.2vw;
     font-weight: bolder;
 }
 
+div.mission-h-txt, div.vision-h-txt {
+    font-size: 1.75vw;
+    font-weight: bolder;
+}
+
 p.card-p-txt {
-    font-size: 2vw;
+    font-size: 1.65vw;
 }
 
 div.mySlides {
@@ -90,6 +90,13 @@ div.mySlides img {
 
 div.card {
     border: none;
+}
+
+.card-link, button.service-link {
+    font-size: 1.65vw;
+    padding: 1px;
+    width: 80%;
+    margin: auto;
 }
 
 /* image page style */
@@ -138,12 +145,12 @@ footer {
 
 @media screen and (min-width:320px) and (max-width:426px) {
     div.home-p-txt {
-        padding-left: 6vw;
-        padding-right: 6vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
 
     div.home-p-txt p {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
 
     div.contact-btn {
@@ -151,22 +158,16 @@ footer {
         top: 72%;
     }
 
-    div.contact-btn input {
-        padding: 1.5vw;
-        font-size: 4vw;
-        border-radius: 3px;
-    }
-
     div.about-h-txt h1 {
-        font-size: 4.7vw;
+        font-size: 5.27vw;
     }
 
     div.mission-h-txt, div.vision-h-txt {
-        font-size: 4.2vw;
+        font-size: 5vw;
     }
 
     p.card-p-txt {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
 
     div.about-card {
@@ -182,48 +183,42 @@ footer {
     }
 
     .card-link, button.service-link {
-        font-size: 15px;
+        font-size: 4.5vw;
         padding: 1px;
-        width: 70%;
+        width: 75%;
         margin: auto;
     }
 }
 
 @media screen and (min-width:426px) and (max-width:769px) {
     div.home-p-txt {
-        padding-left: 12vw;
-        padding-right: 12vw;
+        padding-left: 23vw;
+        padding-right: 23vw;
     }
 
     div.home-p-txt p {
-        font-size: 3vw;
+        font-size: 2.3vw;
     }
 
     div.contact-btn {
         position: absolute;
-        top: 66%;   
-    }
-
-    div.contact-btn input {
-        padding: 1vw;
-        font-size: 2vw;
-        border-radius: 5px;
+        top: 65%;   
     }
 
     div.about-h-txt h1 {
-        font-size: 3.7vw;
+        font-size: 3.25vw;
     }
 
     div.about-card {
-        min-width: 60%;
+        min-width: 50%;
     }
 
     div.mission-h-txt, div.vision-h-txt {
-        font-size: 3.2vw;
+        font-size: 2.8vw;
     }
 
     p.card-p-txt {
-        font-size: 3vw;
+        font-size: 2.3vw;
     }
 
     .prev, .next {
@@ -235,44 +230,38 @@ footer {
     }
 
     .card-link, button.service-link {
-        font-size: 15px;
-        padding: 2px;
-        width: 70%;
+        font-size: 2.3vw;
+        padding: 1px;
+        width: 75%;
         margin: auto;
     }
 }
 
 @media screen and (min-width:769px) and (max-width:1025px) {
     div.home-p-txt {
-        padding-left: 12vw;
-        padding-right: 12vw;
+        padding-left: 25vw;
+        padding-right: 25vw;
     }
 
     div.home-p-txt p {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     div.contact-btn {
         position: absolute;
-        top: 66%;
-    }
-
-    div.contact-btn input {
-        padding: 1vw;
-        font-size: 2vw;
-        border-radius: 5px;
+        top: 65%;
     }
 
     div.about-h-txt h1 {
-        font-size: 3.7vw;
+        font-size: 2.95vw;
     }
 
     div.mission-h-txt, div.vision-h-txt {
-        font-size: 3.2vw;
+        font-size: 2.5vw;
     }
 
     p.card-p-txt {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .prev, .next {
@@ -284,9 +273,9 @@ footer {
     }
     
     .card-link, button.service-link {
-        font-size: 18px;
-        padding: 3px;
-        width: 80%;
+        font-size: 2vw;
+        padding: 1px;
+        width: 75%;
         margin: auto;
     }
 }
