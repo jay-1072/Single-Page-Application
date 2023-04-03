@@ -93,9 +93,9 @@ div.card {
 }
 
 .card-link, button.service-link {
-    font-size: 1.65vw;
+    font-size: 1.35vw;
     padding: 1px;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
